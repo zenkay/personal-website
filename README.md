@@ -1,7 +1,8 @@
-Run the following commands.
+# My Personal Home Page
 
-    bundle
-    foreman start
-Go to http://localhost:5000 to see the result.
+Sinatra based app deployed on [Heroku](http://www.heroku.com) on Cedar stack
 
-To deploy to heroku, check out [this article](http://devcenter.heroku.com/articles/ruby)
+Available at:
+
+*   [http://andreamostosi.name](http://andreamostosi.name)
+*   [http://zenkay.net](http://zenkay.net)
