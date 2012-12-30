@@ -1,6 +1,6 @@
 # My Personal Home Page
 
-Sinatra based app deployed on [Heroku](http://www.heroku.com) on Cedar stack
+Sinatra based app deployed on [AppFog](http://www.appfog.com).
 
 Available at:
 
