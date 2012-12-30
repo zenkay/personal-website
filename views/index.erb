@@ -7,33 +7,35 @@
 		<link rel="icon" href="icons/favicon.ico"/>
 		<style>
 		  *, html {margin: 0; padding: 0;}
-		  html {background: url("images/background.jpg") no-repeat center center fixed #666; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; font-weight: 300; font-family: "Helvetica Neue", Helvetica, sans-serif; color: #fff; height: 100%;}
-		  body {height: 100%;}
+		  html {background: url("images/background.jpg") no-repeat center center fixed #666; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; font-weight: 100; font-family: "Helvetica Neue", Helvetica, sans-serif; color: #fff; height: 100%;}
+		  body {height: 100%; letter-spacing: 1px;}
+      strong {font-weight: 500;}
 		  .shadow {background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.7); -moz-box-shadow: 0px 0px 10px #333; -webkit-box-shadow: 0px 0px 10px #333; box-shadow: 0px 0px 10px #333;}
       .social {margin: 5px;}
       #text {background: rgb(0, 0, 0); background: rgba(0,0,0,0.7);}
-      #text p {font-size: 14px;}
+      #text p {font-size: 16px;}
       a {color: yellow; text-decoration: underline;}
       a:hover {color: orange;}
-      .rounded {-webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;}
+      .rounded {-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
 		</style>
 	</head>
 	
 	<body>
 	  <div style="width: 100%; height: 100%; display: table; text-align: center;">
       <div style="display: table-cell; vertical-align: middle;">
-        <div style="width: 250px; padding: 15px; margin: auto;">
+        <div style="width: 300px; padding: 15px; margin: auto;">
           <div>
-            <img src="https://secure.gravatar.com/avatar/30616c35d48ad4103b57893d293af66d?size=200" style="border: 1px solid black;" class="shadow"/>
+            <img src="https://secure.gravatar.com/avatar/30616c35d48ad4103b57893d293af66d?size=230" style="border: 1px solid black;" class="shadow"/>
           </div>
           <div style="margin: 10px auto;">
-            <a href="http://andreamostosi.name/twitter" title="Twitter"><img src="images/twitter.png" class="social shadow"/></a>
-            <a href="http://andreamostosi.name/linkedin" title="LinkedIn"><img src="images/linkedin.png" class="social shadow"/></a>
-            <a href="http://andreamostosi.name/github" title="GitHub"><img src="images/github.png" class="social shadow"/></a>
-            <a href="http://blog.andreamostosi.name/" title="Wordpress"><img src="images/wordpress.png" class="social shadow"/></a>
+            <a href="https://twitter.com/#!/zenkay" title="follow me on Twitter"><img src="icons/twitter.png" class="social shadow"/></a>
+            <a href="http://it.linkedin.com/in/andreamostosi" title="view my professional profile on LinkedIn"><img src="icons/linkedin.png" class="social shadow"/></a>
+            <a href="https://github.com/zenkay" title="view my personal open source projects on GitHub"><img src="icons/github.png" class="social shadow"/></a>
+            <a href="http://blog.andreamostosi.name/" title="Read about my daily experience on my Wordpress blog"><img src="icons/wordpress.png" class="social shadow"/></a>
+            <a href="https://www.facebook.com/andrea.mostosi" title="Send me a friend request and stalk me on Facebook"><img src="icons/facebook.png" class="social shadow"/></a>
           </div>
-          <div id="text" style="padding: 20px;" class="rounded">
-            <p>My name is <strong>Andrea Mostosi</strong>, I'm 27 and I currently live in Italy. More info about me: my <a href="http://andreamostosi.name/resume">LinkedIn résumé</a>, my <a href="http://andreamostosi.name/aboutme">About.me profile</a> and a <a href="http://www.google.com/search?q=andrea+mostosi">Google query</a> on my name</p>
+          <div id="text" style="padding: 12px 10px 15px 16px; text-align: left;" class="rounded">
+            <p>My name is <strong>Andrea Mostosi</strong>, I'm <%= ((Time.now - Time.new(1985, 01, 22, 14, 30, 00))/(365*24*3600)).floor %> and I currently live in Italy (Europe). More details about me: my <a href="http://andreamostosi.name/resume">Résumé</a> (based on LinkedIn profile), my <a href="http://andreamostosi.name/aboutme">About.me page</a> and a <a href="http://www.google.com/search?q=andrea+mostosi">Google query</a> made using my name as argument.</p>
           </div>
         </div>
       </div>
